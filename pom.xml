@@ -26,6 +26,12 @@
   </properties>
 
   <dependencies>
+      <!-- groovy to class support. -->
+      <dependency>
+          <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-all</artifactId>
+          <version>2.2.2</version>
+      </dependency>
       <dependency>
           <groupId>org.grails.plugins</groupId>
           <artifactId>database-migration</artifactId>
