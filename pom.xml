@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.cs.brandeis</groupId>
+  <artifactId>oempa</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Online Environment for Multi-Purpose Annotation</name>
+  <description>
+  </description>
+
+  <repositories>
+       <repository>
+          <id>grails</id>
+          <name>grails</name>
+          <url>http://repo.grails.org/grails/core</url>
+      </repository>
+      <repository>
+          <id>grails-plugins</id>
+          <name>grails-plugins</name>
+          <url>http://repo.grails.org/grails/plugins</url>
+      </repository>
+  </repositories>
+
+  <properties>
+        <grails.version>2.4.0</grails.version>
+  </properties>
+
+  <dependencies>
+      <dependency>
+          <groupId>org.grails.plugins</groupId>
+          <artifactId>database-migration</artifactId>
+          <version>1.1</version>
+          <scope>runtime</scope>
+          <type>zip</type>
+      </dependency>
+    <dependency>
+      <groupId>org.grails</groupId>
+      <artifactId>grails-dependencies</artifactId>
+      <version>${grails.version}</version>
+      <type>pom</type>
+    </dependency>
+	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.8.1</version>
+        <scope>test</scope>
+  	</dependency>
+  </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<version>2.7.2</version>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<argLine>-Xms512m -Xmx1024m -XX:MaxPermSize=512m</argLine>
+					<!-- mvn test: java.lang.OutOfMemoryError: Java heap space -->
+				</configuration>
+			</plugin> 
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.10</version>
+				<configuration>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>4040</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+					</connectors>
+				</configuration>
+			</plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.grails</groupId>-->
+                <!--<artifactId>grails-maven-plugin</artifactId>-->
+                <!--<version>${grails.version}</version>-->
+                <!--<configuration>-->
+                    <!--<grailsVersion>${grails.version</grailsVersion>-->
+                <!--</configuration>-->
+                <!--<extensions>true</extensions>-->
+                <!--&lt;!&ndash;<executions>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<execution>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<goals>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>init</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>maven-clean</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>validate</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>config-directories</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>maven-compile</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>maven-test</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>maven-war</goal>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<goal>maven-functional-test</goal>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</goals>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</execution>&ndash;&gt;-->
+                <!--&lt;!&ndash;</executions>&ndash;&gt;-->
+            <!--</plugin>-->
+		</plugins>
+	</build>	
+</project>
