@@ -1,0 +1,16 @@
+{"metadata":[
+    {"name":"ID","label":"ID","datatype":"string","editable":true},
+    {"name":"START","label":"START","datatype":"string","editable":true},
+    {"name":"END","label":"END","datatype":"string","editable":true},
+    {"name":"STRING","label":"STRING","datatype":"string","editable":true},
+    {"name":"TYPE","label":"TYPE","datatype":"string","editable":true,"values":
+    ["Person","Date","Location"]
+    },
+    {"name":"COMMENTS","label":"COMMENTS","datatype":"string","editable":true}
+],
+
+    "data":[
+        {"id":1, "values":{"ID":"1","START":5,"END":16,"STRING":"JABBERWOCKY","TYPE":"Person","COMMENTS":""}}
+    ]
+
+}

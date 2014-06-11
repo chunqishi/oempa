@@ -1,0 +1,177 @@
+#dropdown {
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	margin: 20px 0;
+	height:1em;
+	list-style: none;
+	white-space: nowrap;
+}
+
+#dropdown ul li a.subMenu {
+    background-repeat:no-repeat;
+    background-image:url('images/right.gif');
+    background-position: center right;
+}
+
+#dropdown li ul {
+	position: absolute;
+	top: 1.3em;
+	left: -1px;
+	width: 156px;
+	border:1px solid #999999;
+	border-width:0px 1px 1px 1px;
+}
+
+#dropdown li ul ul {
+	position: absolute;
+	left: 156px;
+	top: 0;
+	width: 156px;
+	border-width:1px 1px 1px 1px;
+}
+#dropdown ul {
+	position: relative;
+	z-index: 2;
+	display: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	padding-top:15px;
+	background-color:#F3F3F3;
+}
+#dropdown ul ul{
+	padding-top:0;
+}
+
+#dropdown ul.click {
+    display: block;
+}
+
+#dropdown li {
+	position: relative;
+	background-color: #ffffff;
+    z-index:1;
+	border: 1px solid #999999;
+	padding: 0;
+	margin: 0;
+	color: #000000;
+	float: left;
+	width: 156px;
+	display: block;
+}
+#dropdown ul li{
+    border-width:0;
+}
+#dropdown ul li a{
+    background-image:none;
+}
+
+#dropdown ul li a:hover {
+	color: #000000;
+	background-repeat:no-repeat;
+	background-image:url('images/hoverArrow.gif');
+	background-position:center left;
+	text-decoration:none;
+}
+
+#dropdown li a:hover {
+	color: #000000;
+	background-image:none;
+	text-decoration:underline;
+}
+
+#dropdown li a.click {
+	color: #000000;
+	background-image:none;
+	text-decoration:underline;
+}
+
+#dropdown ul li a.click {
+	color: #000000;
+	background-repeat:no-repeat;
+	background-image:url('images/hoverArrow.gif');
+	background-position:center left;
+	text-decoration:none;
+	padding-right:0;
+}
+#dropdown li a span{
+    position:relative;
+    display:block;
+    padding:0;
+    margin:0;
+}
+#dropdown ul li a span{
+    padding:2px;
+    display:block;
+    background-color:#F3F3F3;
+}
+
+#dropdown li a.click, #dropdown li a:hover{
+    padding:2px 0 2px 0;
+}
+#dropdown ul li a.click, #dropdown ul li a:hover{
+    padding:2px 15px 2px 15px;
+}
+#dropdown li a.click span, #dropdown li a:hover span{
+    padding:5px 2px 0 2px;
+    top:-5px;
+    background-image:url('images/top.gif');
+    background-position:top left;
+    background-repeat:no-repeat;
+}
+
+#dropdown ul li a.click span, #dropdown ul li a:hover span{
+    background-color:#CCCCCC;
+    background-image:none;
+    padding:2px;
+    top:0;
+    left:0;
+}
+
+#dropdown ul li a:hover {
+	color: #000000;
+	background-repeat:no-repeat;
+	background-image:url('images/hoverArrow.gif');
+	background-position:center left;
+	text-decoration:none;
+}
+
+#dropdown li a:hover {
+	color: #000000;
+	background-image:none;
+	text-decoration:underline;
+}
+
+#dropdown li a.click {
+	color: #000000;
+	background-image:none;
+	text-decoration:underline;
+}
+
+#dropdown ul li a.click {
+	color: #000000;
+	background-repeat:no-repeat;
+	background-image:url('images/hoverArrow.gif');
+	background-position:center left;
+	text-decoration:none;
+	padding-right:0;
+}
+#dropdown li a {
+    position: relative;
+    z-index: 1;
+    display: block;
+	padding: 2px;
+	margin: 0;
+	text-decoration: none;
+	background-color:#F3F3F3;
+	color: #000000;
+	background-repeat:no-repeat;
+    background-image: url('images/background.gif');
+	background-position: bottom left;
+}
+#dropdown ul li a{
+    background-image:none;
+    padding-left:15px;
+    padding-right:15px;
+}

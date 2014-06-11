@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!--
@@ -2064,7 +2063,7 @@
             <column name='email'><![CDATA[nec.tellus.Nunc@ridiculusmus.com]]></column>
             <column name='freelance'><![CDATA[1]]></column>
             <column name='lastvisit'><![CDATA[26/12/2010]]></column>
-            <column name='action'><![CDATA[]]></column>
+            <column name='action'><![CDATA[ ]]></column>
         </row>
         <row id='184'>
             <column name='name'><![CDATA[Branch]]></column>
@@ -2122,7 +2121,7 @@
             <column name='action'><![CDATA[]]></column>
         </row>
         <row id='189'>
-            <column name='name'><![CDATA[Simon]]>column>
+            <column name='name'><![CDATA[Simon]]></column>
             <column name='firstname'><![CDATA[Bernard]]></column>
             <column name='age'><![CDATA[88]]></column>
             <column name='height'><![CDATA[1.55]]></column>

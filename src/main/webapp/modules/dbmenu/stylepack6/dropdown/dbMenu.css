@@ -1,0 +1,97 @@
+
+#dropdown{
+    position:relative;
+    height:1em;
+    z-index:1;
+    padding:0;
+    margin:20px 0;
+    list-style:none;
+}
+#dropdown li{
+    position:relative;
+    background-color:#323F48;
+	border:1px solid #70797F;
+    width:10em;
+    padding:0;
+    margin:0;
+    color:#000000;
+    float:left;
+}
+#dropdown ul li{
+    border-width:0;
+}
+#dropdown li ul{
+    position:absolute;
+    z-index:2;
+    top:1.5em;
+    left:-1px;
+    width:10em;
+    display:none;
+    padding:0;
+    margin:0;
+    list-style:none;
+	border:1px solid #70797F;
+}
+#dropdown ul li ul{
+    position:absolute;
+    z-index:2;
+    top:0;
+    left:10em;
+    width:10em;
+    display:none;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+#dropdown li a{
+    position:relative;
+    z-index:1;
+    display:block;
+	padding: 2px 15px 2px 15px;
+    margin:0;
+    text-decoration:none;
+	color: #AEB5BF;
+}
+#dropdown li a span{
+    position:relative;
+    display:block;
+    border-bottom:1px dotted #70797F;
+    background-Color:#323F48;
+    padding: 0 15px 0 2px;
+}
+#dropdown li a.subMenu{
+    background-repeat:no-repeat;
+    background-image:url('images/downArrow.gif');
+    background-position:center right;
+}
+#dropdown ul li a.subMenu{
+    background-repeat:no-repeat;
+    background-image:url('images/rightArrow.gif');
+    background-position:center right;
+}
+#dropdown li a:hover{
+    background-image: url('images/hover.gif');
+    background-repeat: no-repeat;
+    background-position:center left;
+}
+#dropdown ul.click{
+    display:block;
+}
+#dropdown li a.click, #dropdown ul li a.click{
+	color: #0000ff;
+    background-image: url('images/hover.gif');
+    background-repeat: no-repeat;
+    background-position:center left;
+}
+#dropdown li.click{
+    background-image:url('images/downArrowHover.gif');
+    background-position:center right;
+    background-repeat: no-repeat;
+}
+#dropdown ul li.click{
+    background-image:url('images/rightArrowHover.gif');
+}
+#dropdown li a.click span, #dropdown li a:hover span {
+    color: #ffffff;
+    border-color:#ffffff;
+}

@@ -1,0 +1,61 @@
+.dbMenu{
+    position:relative;
+    width:10em;
+    z-index:1;
+    padding:0;
+    margin:20px 0;
+    list-style:none;
+}
+.dbMenu li{
+    position:relative;
+    background-color:#ffffff;
+    border:1px solid black;
+    padding:0;
+    margin:0;
+    color:#000000;
+}
+.dbMenu li ul{
+    position:relative;
+    display:none;
+    padding:2px;
+    margin:0;
+    list-style:none;
+}
+.dbMenu li a{
+    position:relative;
+    z-index:1;
+    display:block;
+    background-color:#ffffff;
+    padding:2px;
+    margin:0;
+    text-decoration:none;
+    color:#000000;
+}
+.dbMenu li a.subMenu, .dbMenu ul li a.subMenu{
+    background-repeat:no-repeat;
+    background-image:url('images/down.gif');
+    background-position:bottom right;
+}
+.dbMenu li a:hover{
+    background-color:#fa551a;
+    color:#fffab5;
+}
+.dbMenu ul li a:hover{
+    background-color:#fa7d50;
+    color:#fffab5;
+}
+.dbMenu ul.click{
+    display:block;
+    background-color:#fa551a;
+}
+.dbMenu ul.click li{
+    background-color:#fa551a;
+    color: #fffab5;
+}
+.dbMenu li a.click{
+    background-color:#fa551a;
+    color:#fffab5;
+}
+.dbMenu ul li a.click{
+    background-color:#fa7d50;
+}
